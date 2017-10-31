@@ -2,7 +2,7 @@
 
 For papers, slides and posters, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
 
-![](http://www.ics.uci.edu/~skong2/image/demo_boundaryDet.png  width=500)
+![](http://www.ics.uci.edu/~skong2/image/demo_boundaryDet.png =700x500)
 
 ![alt text](http://www.ics.uci.edu/~skong2/image/demo_boundaryDet.png  | width=500)
 
