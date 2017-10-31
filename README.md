@@ -2,7 +2,9 @@
 
 For papers, slides and posters, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
 
-![alt text](http://www.ics.uci.edu/~skong2/image/SMMMSG_small.png "visualization")
+![alt text](http://www.ics.uci.edu/~skong2/image/demo_boundaryDet.png "visualization")
+
+![alt text](http://www.ics.uci.edu/~skong2/image/demo_instSeg.png "visualization")
 
 
 An end-to-end trainable framework is introduced for solving pixel-labeling vision problems. The framework consists of two novel modules, pixel-pair spherical max-margin embedding regression and recurrent mean shift grouping. While architecture-wise agnostic, conceptually simple, computationally efficient, practically effective, and theoretically abundant, the framework can be purposed for boundary detection, object proposal detection, generic and instance-level segmentation, spanning low-, mid- and high-level vision tasks. Thorough experiments demonstrate that the new framework achieves state-of-the-art performance on all these tasks.
