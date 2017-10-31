@@ -25,7 +25,7 @@ MatConvNet is used in our project, and some functions are changed/added. Please 
 ```python
 LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:local matlab 
 
-path_to_matconvnet = '../matconvnet';
+path_to_matconvnet = './libs/matconvnet-1.0-beta23_modifiedDagnn/';
 run(fullfile(path_to_matconvnet, 'matlab', 'vl_setupnn'));
 addpath(fullfile(path_to_matconvnet, 'matlab'));
 vl_compilenn('enableGpu', true, ...
