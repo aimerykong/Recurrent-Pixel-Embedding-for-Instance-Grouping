@@ -39,7 +39,7 @@ vl_compilenn('enableGpu', true, ...
 
 If you find our model/method/dataset useful, please cite our work:
 
-    @inproceedings{kong2017lowrankbilinear,
+    @inproceedings{kong2017grouppixels,
       title={Learning to Group Pixels into Boundaries, Objectness, Segments and Instances},
       author={Kong, Shu and Fowlkes, Charless},
       booktitle={arxiv},

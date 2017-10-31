@@ -2,9 +2,10 @@
 
 For papers, slides and posters, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
 
-<img src="http://www.ics.uci.edu/~skong2/image/demo_boundaryDet.png" alt="" data-canonical-src="http://www.ics.uci.edu/~skong2/image/demo_boundaryDet.png " width="600" height="350" />
+<img src="http://www.ics.uci.edu/~skong2/image/fig00_visualization.jpg" alt="" data-canonical-src="http://www.ics.uci.edu/~skong2/image/fig00_visualization.jpg " width="390" height="500" />
 
-![alt text](http://www.ics.uci.edu/~skong2/image/demo_instSeg.png "visualization")
+<img src="http://www.ics.uci.edu/~skong2/image/fig01_visualization.jpg" alt="" data-canonical-src="http://www.ics.uci.edu/~skong2/image/fig01_visualization.jpg " width="350" height="545" />
+
 
 
 An end-to-end trainable framework is introduced for solving pixel-labeling vision problems. The framework consists of two novel modules, pixel-pair spherical max-margin embedding regression and recurrent mean shift grouping. While architecture-wise agnostic, conceptually simple, computationally efficient, practically effective, and theoretically abundant, the framework can be purposed for boundary detection, object proposal detection, generic and instance-level segmentation, spanning low-, mid- and high-level vision tasks. Thorough experiments demonstrate that the new framework achieves state-of-the-art performance on all these tasks.
@@ -40,7 +41,7 @@ vl_compilenn('enableGpu', true, ...
 
 If you find our model/method/dataset useful, please cite our work:
 
-    @inproceedings{kong2017lowrankbilinear,
+    @inproceedings{kong2017grouppixels,
       title={Learning to Group Pixels into Boundaries, Objectness, Segments and Instances},
       author={Kong, Shu and Fowlkes, Charless},
       booktitle={arxiv},
