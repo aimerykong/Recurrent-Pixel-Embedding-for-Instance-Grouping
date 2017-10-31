@@ -1,7 +1,9 @@
 # Learning to Group Pixels into Boundaries, Objectness, Segments, and Instances
-For papers, slides and posters, please refer to our [project page](www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
 
-![alt text](http://www.ics.uci.edu/~skong2/image/SMMMSG_small.png "visualization")
+For papers, slides and posters, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
+
+<img src="http://www.ics.uci.edu/~skong2/image/demo_boundaryDet.png" alt="" data-canonical-src="http://www.ics.uci.edu/~skong2/image/demo_boundaryDet.png " width="600" height="350" />
+
 
 
 An end-to-end trainable framework is introduced for solving pixel-labeling vision problems. The framework consists of two novel modules, pixel-pair spherical max-margin embedding regression and recurrent mean shift grouping. While architecture-wise agnostic, conceptually simple, computationally efficient, practically effective, and theoretically abundant, the framework can be purposed for boundary detection, object proposal detection, generic and instance-level segmentation, spanning low-, mid- and high-level vision tasks. Thorough experiments demonstrate that the new framework achieves state-of-the-art performance on all these tasks.
@@ -16,7 +18,7 @@ As for details on the training, demo and code, please go into each demo folder.
 3. demo 3: objectness proposal detection on PASCAL VOC2012 dataset [TODO];
 4. demo 4: instance-level segmentation on PASCAL VOC2012 dataset [TODO].
 
-Please download those models from the [google drive](www.ics.uci.edu/~skong2/SMMMSG.html)
+Please download those models from the [google drive](http://www.ics.uci.edu/~skong2/SMMMSG.html)
 
 MatConvNet is used in our project, and some functions are changed/added. Please compile accordingly by adjusting the path --
 
