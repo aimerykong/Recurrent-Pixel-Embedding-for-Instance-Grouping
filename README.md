@@ -1,6 +1,6 @@
 # Learning to Group Pixels into Boundaries, Objectness, Segments, and Instances
 
-For papers, slides and posters, please refer to our [project page](www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
+For papers, slides and posters, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
 
 ![alt text](http://www.ics.uci.edu/~skong2/image/SMMMSG_small.png "visualization")
 
@@ -17,7 +17,7 @@ As for details on the training, demo and code, please go into each demo folder.
 3. demo 3: objectness proposal detection on PASCAL VOC2012 dataset [TODO];
 4. demo 4: instance-level segmentation on PASCAL VOC2012 dataset [TODO].
 
-Please download those models from the [google drive](www.ics.uci.edu/~skong2/SMMMSG.html)
+Please download those models from the [google drive](http://www.ics.uci.edu/~skong2/SMMMSG.html)
 
 MatConvNet is used in our project, and some functions are changed/added. Please compile accordingly by adjusting the path --
 
