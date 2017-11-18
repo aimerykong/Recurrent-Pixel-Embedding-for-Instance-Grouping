@@ -2,7 +2,6 @@
 
 For paper, slides and poster, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
 
-![alt text](http://www.ics.uci.edu/~skong2/image/icon_pixelEmbedding.png "visualization")
 
 ![alt text](https://raw.githubusercontent.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/master/figure_to_show/demo_combo_v2.png "visualization")
 
