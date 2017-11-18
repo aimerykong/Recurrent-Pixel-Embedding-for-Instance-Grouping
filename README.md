@@ -1,12 +1,13 @@
-# Learning to Group Pixels into Boundaries, Objectness, Segments, and Instances
+# Recurrent Pixel Embedding for Instance Grouping
 
-For papers, slides and posters, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
+For paper, slides and poster, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
+
+![alt text](http://www.ics.uci.edu/~skong2/image/icon_pixelEmbedding.png "visualization")
+
+![alt text](https://raw.githubusercontent.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/master/figure_to_show/demo_combo_v2.png "visualization")
 
 
-![alt text](http://www.ics.uci.edu/~skong2/image/demo_combo.png "visualization")
-
-
-An end-to-end trainable framework is introduced for solving pixel-labeling vision problems. The framework consists of two novel modules, pixel-pair spherical max-margin embedding regression and recurrent mean shift grouping. While architecture-wise agnostic, conceptually simple, computationally efficient, practically effective, and theoretically abundant, the framework can be purposed for boundary detection, object proposal detection, generic and instance-level segmentation, spanning low-, mid- and high-level vision tasks. Thorough experiments demonstrate that the new framework achieves state-of-the-art performance on all these tasks.
+We introduce a differentiable, end-to-end trainable framework for solving pixel-level grouping problems such as instance segmentation consisting of two novel components. First, we regress pixels into a hyper-spherical embedding space so that pixels from the same group have high cosine similarity while those from different groups have similarity below a specified margin. We analyze the choice of embedding dimension and margin, relating them to theoretical results on the problem of distributing points uniformly on the sphere. Second, to group instances, we utilize a variant of mean-shift clustering, implemented as a recurrent neural network parameterized by kernel bandwidth. This recurrent grouping module is differentiable, enjoys convergent dynamics and probabilistic interpretability. Backpropagating the group-weighted loss through this module allows learning to focus on only correcting embedding errors that won't be resolved during subsequent clustering. Our framework, while conceptually simple and theoretically abundant, is also practically effective and computationally efficient. We demonstrate substantial improvements over state-of-the-art instance segmentation for object proposal generation, as well as demonstrating the benefits of grouping loss for classification tasks such as boundary detection and semantic segmentation.
 
 
 Several demos are included as below. 
@@ -40,7 +41,7 @@ vl_compilenn('enableGpu', true, ...
 If you find our model/method/dataset useful, please cite our work:
 
     @inproceedings{kong2017grouppixels,
-      title={Learning to Group Pixels into Boundaries, Objectness, Segments and Instances},
+      title={Recurrent Pixel Embedding for Instance Grouping},
       author={Kong, Shu and Fowlkes, Charless},
       booktitle={arxiv},
       year={2017}
@@ -49,7 +50,7 @@ If you find our model/method/dataset useful, please cite our work:
 
 
 
-last update: 10/31/2017
+last update: 11/17/2017
 
 Shu Kong
 
