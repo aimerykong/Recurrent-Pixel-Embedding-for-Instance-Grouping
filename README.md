@@ -39,7 +39,7 @@ vl_compilenn('enableGpu', true, ...
 ```
 
 
-If you find our model/method/dataset useful, please cite our work through the [arxiv paper]https://arxiv.org/abs/1712.08273):
+If you find our model/method/dataset useful, please cite our work through the [arxiv paper](https://arxiv.org/abs/1712.08273):
 
     @inproceedings{kong2017grouppixels,
       title={Recurrent Pixel Embedding for Instance Grouping},
