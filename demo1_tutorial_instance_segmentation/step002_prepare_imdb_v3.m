@@ -1,20 +1,10 @@
-%LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:local matlab -nodisplay
-%{
-run(fullfile(path_to_matconvnet, 'matlab', 'vl_setupnn'));
-addpath(fullfile(path_to_matconvnet, 'matlab'));
-vl_compilenn('enableGpu', true, ...
-               'cudaRoot', '/usr/local/cuda-7.5', ...
-               'cudaMethod', 'nvcc', ...
-               'enableCudnn', true, ...
-               'cudnnRoot', '/usr/local/cuda-7.5/cudnn-v5') ;
-
-%}
-% clear
+clear
 close all
 clc;
 
-addpath(genpath('../libs'))
 addpath('./local_functions_demo1')
+addpath '../libs/exportFig/';
+addpath './fun4MeanShift';
 
 path_to_matconvnet = '../libs/matconvnet-1.0-beta23_modifiedDagnn';
 run(fullfile(path_to_matconvnet, 'matlab', 'vl_setupnn'));

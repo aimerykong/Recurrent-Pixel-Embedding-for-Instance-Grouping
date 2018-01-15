@@ -23,8 +23,12 @@ if ~isempty(stats) && isfield(stats, 'val') && ~isempty(stats.val)
             subplot(2, 2, find(strcmp(p,plots))) ;
         elseif numel(plots) <= 6 
             subplot(2, 3, find(strcmp(p,plots))) ;
-        elseif numel(plots) <= 8 
+        elseif numel(plots) <= 9 
             subplot(3, 3, find(strcmp(p,plots))) ;
+        elseif numel(plots) <= 16 
+            subplot(4, 4, find(strcmp(p,plots))) ;
+        elseif numel(plots) <= 25 
+            subplot(5, 5, find(strcmp(p,plots))) ;
         end
         
         plot(1:size(values,2), values(:, 1:end)','.-') ; % don't plot the first epoch

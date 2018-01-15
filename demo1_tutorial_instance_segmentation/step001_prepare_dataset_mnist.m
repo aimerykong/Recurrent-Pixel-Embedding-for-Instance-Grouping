@@ -2,8 +2,9 @@ clear;
 clc;
 close all;
 
-addpath(genpath('../libs'))
+addpath './fun4MeanShift';
 addpath('./local_functions_demo1')
+addpath '../libs/exportFig/';
 
 path_to_matconvnet = '../libs/matconvnet-1.0-beta23_modifiedDagnn';
 run(fullfile(path_to_matconvnet, 'matlab', 'vl_setupnn'));
