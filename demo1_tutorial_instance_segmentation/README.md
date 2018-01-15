@@ -2,20 +2,18 @@
 
 For papers, slides and posters, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
 
-<img src="http://www.ics.uci.edu/~skong2/image/fig00_visualization.jpg" alt="" data-canonical-src="http://www.ics.uci.edu/~skong2/image/fig00_visualization.jpg " width="500" height="390" />
-
 <img src="http://www.ics.uci.edu/~skong2/image/fig01_visualization_looping.jpg" alt="" data-canonical-src="http://www.ics.uci.edu/~skong2/image/fig01_visualization_looping.jpg " width="545" height="350" />
 
 
 This folder provides the first demo on how to train the model for instance segmentation/grouping. Please run the following scripts sequentially--
 
-1. step001...m: download MNISt dataset and generate the training&testing dataset for this demo.
-2. step002...m: generate the imdb structure which provides training and testing splits with index and meta information (for mean subtraction, etc.).
-3. step003...m: train for instance grouping based on a semantic segmentation network. Five loops of Mean Shift are added with the loss.
-4. step004...m: fine-tune the model at step003. This step is optional, and for demonstrating how to read and fine-tune with customized configurations.
-5. step005...m: visualize the results with multiple Mean Shift loops during training.
+1. [step001...m](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/blob/master/demo1_tutorial_instance_segmentation/step001_prepare_dataset_mnist.m): download MNISt dataset and generate the training&testing dataset for this demo.
+2. [step002...m](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/blob/master/demo1_tutorial_instance_segmentation/step002_prepare_imdb_v3.m): generate the imdb structure which provides training and testing splits with index and meta information (for mean subtraction, etc.).
+3. [step003...m](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/blob/master/demo1_tutorial_instance_segmentation/step003_instSeg_v1_absEucMM.m): train for instance grouping based on a semantic segmentation network. Five loops of Mean Shift are added with the loss.
+4. [step004...m](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/blob/master/demo1_tutorial_instance_segmentation/step004_instSeg_v1_multiMShiftLoops_finetuneStep003.m): fine-tune the model at step003. This step is optional, and for demonstrating how to read and fine-tune with customized configurations.
+5. [step005...m](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/blob/master/demo1_tutorial_instance_segmentation/step005_inst_visualize_looping.m): visualize the results with multiple Mean Shift loops during training.
 
-Some snapshots are shared in the [google drive](https://drive.google.com/open?id=1QxnjCPEXekxYPhNHz5-pB-lW346xhuNU). Please download this folder, rename it to "exp" and put it here, so that all the scripts can know where to find the models for visualization and resuming the training.
+Some models snapshots are shared in the [google drive](https://drive.google.com/open?id=1QxnjCPEXekxYPhNHz5-pB-lW346xhuNU). Please download this folder, rename it to "exp" and put it here, so that all the scripts can know where to find the models for visualization and resuming the training.
 
 
 MatConvNet is used in our project, and some functions are changed/added. The opensource toolbox is [../libs/matconvnet-1.0-beta23_modifiedDagnn](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/libs/matconvnet-1.0-beta23_modifiedDagnn). Please compile accordingly by adjusting the path --
