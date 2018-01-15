@@ -97,7 +97,7 @@ inputs = [] ;
 
 obj.numPendingVarRefs = [obj.vars.fanout] ;
 for l = obj.executionOrder
-%     if l==417
+%     if l>=73
 %          disp(l)
 %     end
     time = tic ;
@@ -127,7 +127,7 @@ obj.numPendingVarRefs = zeros(1, numel(obj.vars)) ;
 obj.numPendingParamRefs = zeros(1, numel(obj.params)) ;
 for l = fliplr(obj.executionOrder)
     time = tic ;
-%     if l == 409
+%     if l == 377
 %         disp(l)
 %     end
     if l >= opts.backPropLayerAbove
