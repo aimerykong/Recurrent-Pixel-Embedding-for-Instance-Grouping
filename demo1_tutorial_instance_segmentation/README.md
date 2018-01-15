@@ -1,4 +1,4 @@
-# Learning to Group Pixels into Boundaries, Objectness, Segments, and Instances
+# Recurrent Pixel Embedding for Instance Grouping
 
 For papers, slides and posters, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
 
@@ -7,34 +7,29 @@ For papers, slides and posters, please refer to our [project page](http://www.ic
 <img src="http://www.ics.uci.edu/~skong2/image/fig01_visualization_looping.jpg" alt="" data-canonical-src="http://www.ics.uci.edu/~skong2/image/fig01_visualization_looping.jpg " width="545" height="350" />
 
 
+This folder provides the first demo on how to train the model for instance segmentation/grouping. Please run the following scripts sequentially--
 
-An end-to-end trainable framework is introduced for solving pixel-labeling vision problems. The framework consists of two novel modules, pixel-pair spherical max-margin embedding regression and recurrent mean shift grouping. While architecture-wise agnostic, conceptually simple, computationally efficient, practically effective, and theoretically abundant, the framework can be purposed for boundary detection, object proposal detection, generic and instance-level segmentation, spanning low-, mid- and high-level vision tasks. Thorough experiments demonstrate that the new framework achieves state-of-the-art performance on all these tasks.
+1. step001...m: download MNISt dataset and generate the training&testing dataset for this demo.
+2. step002...m: generating imdb structure which provides training and testing splits with index and meta information (for mean subtraction, etc.).
+3. step003...m: 
+4. step004...m: 
 
-
-Several demos are included as below. 
-As for details on the training, demo and code, please go into each demo folder.
-
-1. demo 1: a tutorial for learning the embedding hypersphere and mean shift grouping. 
-	We use instance segmentation as example, and include useful visualization functions. [TODO];
-2. demo 2: boundary detection on BSDS500 dataset (also including code, model, visualization) [TODO];
-3. demo 3: objectness proposal detection on PASCAL VOC2012 dataset [TODO];
-4. demo 4: instance-level segmentation on PASCAL VOC2012 dataset [TODO].
 
 Please download those models from the [google drive](http://www.ics.uci.edu/~skong2/SMMMSG.html)
 
-MatConvNet is used in our project, and some functions are changed/added. Please compile accordingly by adjusting the path --
+MatConvNet is used in our project, and some functions are changed/added. The opensource toolbox is [../libs/matconvnet-1.0-beta23_modifiedDagnn](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/libs/matconvnet-1.0-beta23_modifiedDagnn). Please compile accordingly by adjusting the path --
 
 ```python
-LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:local matlab 
+LD_LIBRARY_PATH=/usr/local/cuda/lib64:local matlab 
 
-path_to_matconvnet = '../matconvnet';
+path_to_matconvnet = '../libs/matconvnet-1.0-beta23_modifiedDagnn';
 run(fullfile(path_to_matconvnet, 'matlab', 'vl_setupnn'));
 addpath(fullfile(path_to_matconvnet, 'matlab'));
 vl_compilenn('enableGpu', true, ...
-               'cudaRoot', '/usr/local/cuda-7.5', ...
+               'cudaRoot', '/usr/local/cuda', ...
                'cudaMethod', 'nvcc', ...
                'enableCudnn', true, ...
-               'cudnnRoot', '/usr/local/cuda-7.5/cudnn-v5') ;
+               'cudnnRoot', '/usr/local/cuda/cudnn') ;
 
 ```
 
@@ -44,14 +39,14 @@ If you find our model/method/dataset useful, please cite our work:
     @inproceedings{kong2017grouppixels,
       title={Learning to Group Pixels into Boundaries, Objectness, Segments and Instances},
       author={Kong, Shu and Fowlkes, Charless},
-      booktitle={arxiv},
+      booktitle={arXiv:1712.08273},
       year={2017}
     }
 
 
 
 
-last update: 10/31/2017
+last update: 01/15/2018
 
 Shu Kong
 
