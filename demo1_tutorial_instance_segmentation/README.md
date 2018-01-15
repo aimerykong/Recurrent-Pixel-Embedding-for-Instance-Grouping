@@ -15,7 +15,7 @@ This folder provides the first demo on how to train the model for instance segme
 4. step004...m: 
 
 
-Please download those models from the [google drive](http://www.ics.uci.edu/~skong2/SMMMSG.html)
+Please download those models from the [google drive](https://drive.google.com/drive/folders/1K2bCmz_mldIhV1e3hCbtBrARZR_0bylm?usp=sharing)
 
 MatConvNet is used in our project, and some functions are changed/added. The opensource toolbox is [../libs/matconvnet-1.0-beta23_modifiedDagnn](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/libs/matconvnet-1.0-beta23_modifiedDagnn). Please compile accordingly by adjusting the path --
 

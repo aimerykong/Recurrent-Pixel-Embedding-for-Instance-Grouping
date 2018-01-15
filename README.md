@@ -20,7 +20,7 @@ As for details on the training, demo and code, please go into each demo folder.
 3. demo 3: objectness proposal detection on PASCAL VOC2012 dataset [TODO];
 4. demo 4: instance-level segmentation on PASCAL VOC2012 dataset [TODO].
 
-Please download those models from the [google drive](http://www.ics.uci.edu/~skong2/SMMMSG.html) [TODO]
+Please download those models from the [google drive](https://drive.google.com/drive/folders/1K2bCmz_mldIhV1e3hCbtBrARZR_0bylm?usp=sharing) [TODO]
 
 MatConvNet is used in our project, and some functions are changed/added. Please compile accordingly by adjusting the path --
 
