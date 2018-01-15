@@ -15,7 +15,7 @@ Several demos are included as below.
 As for details on the training, demo and code, please go into each demo folder.
 
 1. [demo 1](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/demo1_tutorial_instance_segmentation): a tutorial for learning the embedding hypersphere and mean shift grouping. 
-	We use instance segmentation as example, and include useful visualization functions. [TODO];
+	We use instance segmentation as example, and include useful visualization functions. [**Ready**];
 2. [demo 2](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/demo2_boundary_deection): boundary detection on BSDS500 dataset (also including code, model, visualization) [TODO];
 3. [demo 3](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/demo3_objectness_proposal_detection): objectness proposal detection on PASCAL VOC2012 dataset [TODO];
 4. [demo 4](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/demo4_semantic_instance_segmentation): instance-level segmentation on PASCAL VOC2012 dataset [TODO].
