@@ -19,22 +19,23 @@ As for details on the training, demo and code, please go into each demo folder.
 2. demo 2: boundary detection on BSDS500 dataset (also including code, model, visualization) [TODO];
 3. demo 3: objectness proposal detection on PASCAL VOC2012 dataset [TODO];
 4. demo 4: instance-level segmentation on PASCAL VOC2012 dataset [TODO].
+5. demo 5: analysis of Mean Shift gradient. 
 
-Please download those models from the [google drive](https://drive.google.com/drive/folders/1K2bCmz_mldIhV1e3hCbtBrARZR_0bylm?usp=sharing) [TODO]
+Please download those models from the [google drive](https://drive.google.com/drive/folders/1K2bCmz_mldIhV1e3hCbtBrARZR_0bylm?usp=sharing). 
 
 MatConvNet is used in our project, and some functions are changed/added. Please compile accordingly by adjusting the path --
 
 ```python
-LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:local matlab 
+LD_LIBRARY_PATH=/usr/local/cuda/lib64:local matlab 
 
 path_to_matconvnet = './libs/matconvnet-1.0-beta23_modifiedDagnn/';
 run(fullfile(path_to_matconvnet, 'matlab', 'vl_setupnn'));
 addpath(fullfile(path_to_matconvnet, 'matlab'));
 vl_compilenn('enableGpu', true, ...
-               'cudaRoot', '/usr/local/cuda-7.5', ...
+               'cudaRoot', '/usr/local/cuda', ...
                'cudaMethod', 'nvcc', ...
                'enableCudnn', true, ...
-               'cudnnRoot', '/usr/local/cuda-7.5/cudnn-v5') ;
+               'cudnnRoot', '/usr/local/cuda/cudnn/lib64') ;
 
 ```
 
