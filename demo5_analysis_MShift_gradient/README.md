@@ -6,7 +6,7 @@ For papers, slides and posters, please refer to our [project page](http://www.ic
 
 
 
-This folder is self-contained that provides an analysis on the gradient through Mean Shift loop(s). Please run script "[simulation07_1D_GBMS_1step_trajectory.m]("https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/blob/master/demo5_analysis_MShift_gradient/simulation07_1D_GBMS_1step_trajectory.m")" to visualize the trajectories of 1D points. 
+This folder is self-contained that provides an analysis on the gradient through Mean Shift loop(s). Please run script [simulation07_1D_GBMS_1step_trajectory.m](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/blob/master/demo5_analysis_MShift_gradient/simulation07_1D_GBMS_1step_trajectory.m) to visualize the trajectories of 1D points. 
 Modifying "meanShiftNumber = 7;" in Line-13 will back-propagate different loops of Mean Shift.
 
 
