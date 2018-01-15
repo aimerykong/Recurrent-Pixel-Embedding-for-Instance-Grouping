@@ -2,12 +2,11 @@
 
 For papers, slides and posters, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
 
-<img src="http://www.ics.uci.edu/~skong2/image/fig00_visualization.jpg" alt="" data-canonical-src="http://www.ics.uci.edu/~skong2/image/fig00_visualization.jpg " width="500" height="390" />
-
-<img src="http://www.ics.uci.edu/~skong2/image/fig01_visualization_looping.jpg" alt="" data-canonical-src="http://www.ics.uci.edu/~skong2/image/fig01_visualization_looping.jpg " width="545" height="350" />
+<img src="https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/blob/master/demo5_analysis_MShift_gradient/simulation07_GBMS_5Loops.png" alt="" data-canonical-src="http://www.ics.uci.edu/~skong2/image/fig00_visualization.jpg " width="500" height="390" />
 
 
-This folder is self-contained that provides an analysis on the gradient through Mean Shift loop(s). Please run script "simulation07_1D_GBMS_1step_trajectory" to visualize the trajectories of 1D points. 
+
+This folder is self-contained that provides an analysis on the gradient through Mean Shift loop(s). Please run script "[simulation07_1D_GBMS_1step_trajectory.m]("https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/blob/master/demo5_analysis_MShift_gradient/simulation07_1D_GBMS_1step_trajectory.m")" to visualize the trajectories of 1D points. 
 Modifying "meanShiftNumber = 7;" in Line-13 will back-propagate different loops of Mean Shift.
 
 
