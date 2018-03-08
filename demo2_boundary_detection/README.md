@@ -5,51 +5,26 @@ For papers, slides and posters, please refer to our [project page](http://www.ic
 <img src="http://www.ics.uci.edu/~skong2/image/demo_boundaryDet.png" alt="" data-canonical-src="http://www.ics.uci.edu/~skong2/image/demo_boundaryDet.png " width="600" height="350" />
 
 
+This demo is for boundary detection. When downloading our trained models from the [google drive](https://drive.google.com/drive/u/1/folders/1MfWWToezy9E6Sv6jY7JfxoUo2igX42Wg), please copy the whole folder(s) inside the link to "models" directory.
 
-An end-to-end trainable framework is introduced for solving pixel-labeling vision problems. The framework consists of two novel modules, pixel-pair spherical max-margin embedding regression and recurrent mean shift grouping. While architecture-wise agnostic, conceptually simple, computationally efficient, practically effective, and theoretically abundant, the framework can be purposed for boundary detection, object proposal detection, generic and instance-level segmentation, spanning low-, mid- and high-level vision tasks. Thorough experiments demonstrate that the new framework achieves state-of-the-art performance on all these tasks.
-
-
-Several demos are included as below. 
-As for details on the training, demo and code, please go into each demo folder.
-
-1. demo 1: a tutorial for learning the embedding hypersphere and mean shift grouping. 
-	We use instance segmentation as example, and include useful visualization functions. [TODO];
-2. demo 2: boundary detection on BSDS500 dataset (also including code, model, visualization) [TODO];
-3. demo 3: objectness proposal detection on PASCAL VOC2012 dataset [TODO];
-4. demo 4: instance-level segmentation on PASCAL VOC2012 dataset [TODO].
-
-Please download those models from the [google drive](https://drive.google.com/drive/u/1/folders/1MfWWToezy9E6Sv6jY7JfxoUo2igX42Wg)
-
-MatConvNet is used in our project, and some functions are changed/added. Please compile accordingly by adjusting the path --
-
-```python
-LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:local matlab 
-
-path_to_matconvnet = '../matconvnet';
-run(fullfile(path_to_matconvnet, 'matlab', 'vl_setupnn'));
-addpath(fullfile(path_to_matconvnet, 'matlab'));
-vl_compilenn('enableGpu', true, ...
-               'cudaRoot', '/usr/local/cuda-7.5', ...
-               'cudaMethod', 'nvcc', ...
-               'enableCudnn', true, ...
-               'cudnnRoot', '/usr/local/cuda-7.5/cudnn-v5') ;
-
-```
+Several scripts from Piotr Dollar's [edge toolbox](https://github.com/pdollar/edges) are used to perform boundary thinning (NMS).
 
 
-If you find our model/method/dataset useful, please cite our work:
 
-    @inproceedings{kong2017grouppixels,
-      title={Learning to Group Pixels into Boundaries, Objectness, Segments and Instances},
+If you find our model/method/dataset useful, please cite our work ([draft at arxiv](https://arxiv.org/abs/1712.08273)):
+
+    @inproceedings{kong2018grouppixels,
+      title={Recurrent Pixel Embedding for Instance Grouping},
       author={Kong, Shu and Fowlkes, Charless},
-      booktitle={arxiv},
-      year={2017}
+      booktitle={2018 Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year={2018}
     }
 
 
 
 
-last update: 10/31/2017
+
+last update: 03/08/2018
 
 Shu Kong
 
