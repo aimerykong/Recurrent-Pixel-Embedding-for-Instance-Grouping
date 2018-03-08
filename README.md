@@ -42,11 +42,11 @@ vl_compilenn('enableGpu', true, ...
 
 If you find our model/method/dataset useful, please cite our work through the [arxiv paper](https://arxiv.org/abs/1712.08273):
 
-    @inproceedings{kong2017grouppixels,
+    @inproceedings{kong2018grouppixels,
       title={Recurrent Pixel Embedding for Instance Grouping},
       author={Kong, Shu and Fowlkes, Charless},
-      booktitle={arxiv 1712.08273},
-      year={2017}
+      booktitle={2018 Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year={2018}
     }
 
 
@@ -54,7 +54,7 @@ If you find our model/method/dataset useful, please cite our work through the [a
 ![alt text](https://raw.githubusercontent.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/master/figure_to_show/demo_combo_v2.png "visualization")
 
 
-last update: 12/24/2017
+last update: 03/08/2018
 
 Shu Kong
 
