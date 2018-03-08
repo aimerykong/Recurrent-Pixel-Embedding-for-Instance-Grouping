@@ -7,7 +7,7 @@ For papers, slides and posters, please refer to our [project page](http://www.ic
 
 This demo is for boundary detection. When downloading our trained models from the [google drive](https://drive.google.com/drive/u/1/folders/1MfWWToezy9E6Sv6jY7JfxoUo2igX42Wg), please copy the whole folder(s) inside the link to "models" directory.
 
-Several scripts from Piotr Dollar's [edge toolbox](https://github.com/pdollar/edges) are used to perform boundary thinning (NMS).
+Running script [main001_visualize.m](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/blob/master/demo2_boundary_detection/main001_visualize.m) will show you the embedding visualization as well as intermediate&final results. Note that you might need to compile several scripts which are used for boundary thinning (NMS) from Piotr Dollar's [edge toolbox](https://github.com/pdollar/edges). If issues about this happens, commenting out the related lines will help executing the script.
 
 
 
