@@ -18,7 +18,7 @@ As for details on the training, demo and code, please go into each demo folder.
 	We use instance segmentation as example, and include useful visualization functions. [**Ready**];
 2. [demo 2](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/demo2_boundary_detection): boundary detection on BSDS500 dataset (also including code, model, visualization) [**Ready**];
 3. [demo 3](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/demo3_objectness_proposal_detection): objectness proposal detection on PASCAL VOC2012 dataset [**Ready**];
-4. [demo 4](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/demo4_semantic_instance_segmentation): instance-level segmentation on PASCAL VOC2012 dataset [TODO].
+4. ~~[demo 4](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/demo4_semantic_instance_segmentation): instance-level segmentation on PASCAL VOC2012 dataset [TODO].~~
 5. [demo 5](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/demo5_analysis_MShift_gradient): analysis of Mean Shift gradient. [**Ready**] 
 
 Please download those models from the [google drive](https://drive.google.com/drive/folders/1K2bCmz_mldIhV1e3hCbtBrARZR_0bylm?usp=sharing). 
