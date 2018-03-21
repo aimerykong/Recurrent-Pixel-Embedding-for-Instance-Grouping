@@ -33,11 +33,11 @@ vl_compilenn('enableGpu', true, ...
 
 If you find our model/method/dataset useful, please cite our work:
 
-    @inproceedings{kong2017grouppixels,
-      title={Learning to Group Pixels into Boundaries, Objectness, Segments and Instances},
+    @inproceedings{kong2018grouppixels,
+      title={Recurrent Pixel Embedding for Instance Grouping},
       author={Kong, Shu and Fowlkes, Charless},
-      booktitle={arxiv},
-      year={2017}
+      booktitle={2018 Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year={2018}
     }
 
 
