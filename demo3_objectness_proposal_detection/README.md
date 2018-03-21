@@ -13,12 +13,11 @@ Several demos are included as below.
 As for details on the training, demo and code, please go into each demo folder.
 
 1. demo 1: a tutorial for learning the embedding hypersphere and mean shift grouping. 
-	We use instance segmentation as example, and include useful visualization functions. [TODO];
-2. demo 2: boundary detection on BSDS500 dataset (also including code, model, visualization) [TODO];
-3. demo 3: objectness proposal detection on PASCAL VOC2012 dataset [TODO];
-4. demo 4: instance-level segmentation on PASCAL VOC2012 dataset [TODO].
+	We use instance segmentation as example, and include useful visualization functions. [Ready];
+2. demo 2: boundary detection on BSDS500 dataset (also including code, model, visualization) [Ready];
+3. demo 3: objectness proposal detection on PASCAL VOC2012 dataset [Ready];
 
-Please download those models from the [google drive](http://www.ics.uci.edu/~skong2/SMMMSG.html)
+Please download those models from the [google drive](https://drive.google.com/drive/u/1/folders/1Ii1RPiwB-SvQchnmRvSVEcGSCCrxvpHc)
 
 MatConvNet is used in our project, and some functions are changed/added. Please compile accordingly by adjusting the path --
 
