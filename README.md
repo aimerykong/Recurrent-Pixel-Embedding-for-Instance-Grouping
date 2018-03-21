@@ -54,7 +54,7 @@ If you find our model/method/dataset useful, please cite our work ([draft at arx
 ![alt text](https://raw.githubusercontent.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/master/figure_to_show/demo_combo_v2.png "visualization")
 
 
-last update: 03/08/2018
+last update: 03/20/2018
 
 Shu Kong
 
