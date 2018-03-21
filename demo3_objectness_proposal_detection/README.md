@@ -7,14 +7,14 @@ For papers, slides and posters, please refer to our [project page](http://www.ic
 
 To run the demo, please download the model from the [google drive](https://drive.google.com/drive/u/1/folders/1Ii1RPiwB-SvQchnmRvSVEcGSCCrxvpHc), and put it under ./basemodel
 
+Simply running script ["demo.m"](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/blob/master/demo3_objectness_proposal_detection/demo.m) will help visualize embedding features. The demo will traverse images under folder ["images"](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/demo3_objectness_proposal_detection/images), and save all visual results under folder ["results"](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/tree/master/demo3_objectness_proposal_detection/results).
 
 
 
 
 
 
-
-MatConvNet is used in our project, and some functions are changed/added. Please compile accordingly by adjusting the path --
+As MatConvNet is used in our project, please compile accordingly by adjusting the following path.
 
 ```python
 LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:local matlab 
