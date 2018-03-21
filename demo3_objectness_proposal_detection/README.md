@@ -3,21 +3,16 @@
 For papers, slides and posters, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
 
 
-![alt text](http://www.ics.uci.edu/~skong2/image/demo_instSeg.png "visualization")
+![alt text](https://raw.githubusercontent.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/master/demo3_objectness_proposal_detection/results/id1_summary.jpg "visualization")
+
+To run the demo, please download the model from the [google drive](https://drive.google.com/drive/u/1/folders/1Ii1RPiwB-SvQchnmRvSVEcGSCCrxvpHc), and put it under ./basemodel
 
 
-An end-to-end trainable framework is introduced for solving pixel-labeling vision problems. The framework consists of two novel modules, pixel-pair spherical max-margin embedding regression and recurrent mean shift grouping. While architecture-wise agnostic, conceptually simple, computationally efficient, practically effective, and theoretically abundant, the framework can be purposed for boundary detection, object proposal detection, generic and instance-level segmentation, spanning low-, mid- and high-level vision tasks. Thorough experiments demonstrate that the new framework achieves state-of-the-art performance on all these tasks.
 
 
-Several demos are included as below. 
-As for details on the training, demo and code, please go into each demo folder.
 
-1. demo 1: a tutorial for learning the embedding hypersphere and mean shift grouping. 
-	We use instance segmentation as example, and include useful visualization functions. [Ready];
-2. demo 2: boundary detection on BSDS500 dataset (also including code, model, visualization) [Ready];
-3. demo 3: objectness proposal detection on PASCAL VOC2012 dataset [Ready];
 
-Please download those models from the [google drive](https://drive.google.com/drive/u/1/folders/1Ii1RPiwB-SvQchnmRvSVEcGSCCrxvpHc)
+
 
 MatConvNet is used in our project, and some functions are changed/added. Please compile accordingly by adjusting the path --
 
@@ -48,7 +43,7 @@ If you find our model/method/dataset useful, please cite our work:
 
 
 
-last update: 10/31/2017
+last update: 03/20/2018
 
 Shu Kong
 
