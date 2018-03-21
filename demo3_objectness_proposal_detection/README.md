@@ -1,4 +1,4 @@
-# Learning to Group Pixels into Boundaries, Objectness, Segments, and Instances
+# Recurrent Pixel Embedding for Instance Grouping
 
 For papers, slides and posters, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
 
