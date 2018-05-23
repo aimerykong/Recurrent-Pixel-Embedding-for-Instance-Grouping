@@ -59,16 +59,16 @@ stats = [] ;
 modelPath = @(ep) fullfile(opts.expDir, sprintf('%snet-epoch-%d.mat', prefixStr, ep));
 modelFigPath = fullfile(opts.expDir, [prefixStr 'net-train.pdf']) ;
 start = opts.continue * myfindLastCheckpoint(opts.expDir, prefixStr) ;
-% if start >= 1
-%     fprintf('%s: resuming by loading epoch %d\n', mfilename, start) ;
-%     [net, stats] = loadState(modelPath(start)) ;
-%     idx = net.getLayerIndex('obj_MM');
-%     net.layers(idx).block.lastLayerName = 'output_cosSim';
-%     idx = net.getLayerIndex('obj_reg');
-%     net.layers(idx).block.lastLayerName = 'output_cosSim';
-%     idx = net.getLayerIndex('output_cosSim');
-%     net.layers(idx).block.randSampleRatio = 0.2;
-% end
+if start >= 1
+    fprintf('%s: resuming by loading epoch %d\n', mfilename, start) ;
+    [net, stats] = loadState(modelPath(start)) ;
+    idx = net.getLayerIndex('obj_MM');
+    net.layers(idx).block.lastLayerName = 'output_cosSim';
+    idx = net.getLayerIndex('obj_reg');
+    net.layers(idx).block.lastLayerName = 'output_cosSim';
+    idx = net.getLayerIndex('output_cosSim');
+     net.layers(idx).block.randSampleRatio = 0.2;
+end
 
 for i = 1:numel(net.params)
     fprintf('%d \t%s, \t\t%.2f\n',i, net.params(i).name, net.params(i).learningRate);
