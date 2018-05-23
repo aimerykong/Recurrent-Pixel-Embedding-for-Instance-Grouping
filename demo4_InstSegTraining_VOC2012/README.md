@@ -8,7 +8,10 @@ For papers, slides and posters, please refer to our [project page](http://www.ic
 This is a demo for training instance segmentation using the proposed method. 
 Please download the initial basemodel from the [google drive](https://drive.google.com/open?id=15WHwfsNEV1I2cDxm9YGHSf_r2uHF1sQ-), and put the whole folder under directory "exp".
 Once the initial model is ready, feel free to run the three script with name prefix "main00....m".
-As the name suggests, "main000..." visualizes the results using the model specified inside the script; "main001_trainScript.m" provides a demo to train the model.
+As the name suggests, 
+
+1. "main000..." visualizes the results using the model specified inside the script; 
+2. "main001_trainScript.m" provides a demo to train the model.
 
 
 
