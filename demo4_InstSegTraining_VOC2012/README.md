@@ -6,7 +6,7 @@ For papers, slides and posters, please refer to our [project page](http://www.ic
 ![alt text](https://raw.githubusercontent.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping/master/demo3_objectness_proposal_detection/results/id1_summary.jpg "visualization")
 
 This is a demo for training instance segmentation using the proposed method. 
-Please download the initial basemodel from the [google drive](https://drive.google.com/open?id=15WHwfsNEV1I2cDxm9YGHSf_r2uHF1sQ-), and put the whole folder under directory "exp".
+Please download the initial basemodel from the [google drive](https://drive.google.com/drive/folders/15WHwfsNEV1I2cDxm9YGHSf_r2uHF1sQ-?usp=sharing), and put the whole folder under directory "exp".
 Once the initial model is ready, feel free to run the three script with name prefix "main00....m".
 As the name suggests, 
 
