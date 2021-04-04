@@ -1,8 +1,8 @@
 # Recurrent Pixel Embedding for Instance Grouping
 
-For paper, slides and poster, please refer to our [project page](http://www.ics.uci.edu/~skong2/SMMMSG.html "pixel-grouping")
+For paper, slides and poster, please refer to our [project page](http://www.cs.cmu.edu/~shuk/SMMMSG.html "pixel-grouping")
 
-![alt text](http://www.ics.uci.edu/~skong2/image/icon_pixelEmbedding.png "visualization")
+![alt text](http://www.cs.cmu.edu/~shuk/image/icon_pixelEmbedding.png "visualization")
 
 
 We introduce a differentiable, end-to-end trainable framework for solving pixel-level grouping problems such as instance segmentation consisting of two novel components. First, we regress pixels into a hyper-spherical embedding space so that pixels from the same group have high cosine similarity while those from different groups have similarity below a specified margin. We analyze the choice of embedding dimension and margin, relating them to theoretical results on the problem of distributing points uniformly on the sphere. Second, to group instances, we utilize a variant of mean-shift clustering, implemented as a recurrent neural network parameterized by kernel bandwidth. This recurrent grouping module is differentiable, enjoys convergent dynamics and probabilistic interpretability. Backpropagating the group-weighted loss through this module allows learning to focus on only correcting embedding errors that won't be resolved during subsequent clustering. Our framework, while conceptually simple and theoretically abundant, is also practically effective and computationally efficient. We demonstrate substantial improvements over state-of-the-art instance segmentation for object proposal generation, as well as demonstrating the benefits of grouping loss for classification tasks such as boundary detection and semantic segmentation.
